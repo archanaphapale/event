@@ -1,0 +1,184 @@
+<html>
+<head>
+	<title>Registration form</title>
+
+<style type="text/css">
+
+span
+{
+	color: red;
+	font-size:12px;
+	
+}
+
+</style>
+
+</div>
+</head>
+<body>
+
+<form action ="#" autocomplete="off" onsubmit="return validation()">
+<table cellpadding="12" width="20%" bgcolor="lightblue" align="center" scellspacing="2"
+
+<tr>
+<td colspan=2>
+<center><h3style="background-color:red"><font size=4><b>STUDENT REGISTRATION FORM</b></h3></font></center>
+</td>
+</tr>
+
+
+
+<tr><td>Name</td>
+<td><input type="text" name="name" id="name" size="30">
+<br><span id="namee"></span>
+</td></tr>
+
+
+<tr><td>Address</td>
+<td><input type="text" name="address" id="Address" size="30">
+<br><span id="Addresss"></span>
+</td></tr>
+
+
+<tr><td>Gender</td>
+<td><input type="radio" id="male" Value="Male" name="gender">
+<lable for="male">Male</lable>
+<td><input type="radio" id="female" Value="female" name="gender">
+<lable for="female">Female</lable>
+</td></tr>
+
+
+<td>State</td>
+<td><select Name="State">
+<option Value="-1 selected>select..</option>
+<option Value="Asam">ASAM</option>
+<option Value="Maharashtra">MAHARASHTRA</option>
+<option Value="Andra Pradesh">ANDRA PRADESH</option>
+<option Value="Bihar">BIHAR</option>
+</SELECT>
+</TD></tr>
+
+<td>Distric</td>
+<td><select Name="Distric">
+<option Value="-1 selected>select..</option>
+<option Value="Akola">AKOLA</option>
+<option Value="Kurla">KURLA</option>
+<option Value="Thane">THANE</option>
+<option Value="Satara">SATARA</option>
+<option Value="Patna">PATNA</option>
+<option Value="Latur">LATUR</option>
+</SELECT>
+</TD></tr>
+
+
+<td>City</td>
+<td><select Name="City">
+<option Value="-1 selected>select..</option>
+<option Value="New Delhi">NEW DELHI</option>
+<option Value="Mumbai">MUMBAI</option>
+<option Value="Pune">PUNE</option>
+<option Value="bangalore">BANGALORE</option>
+<option Value="kolkata">KOLKATA</option>
+<option Value="Hyderabad">HYDERABAD</option>
+</SELECT>
+</TD></tr>
+
+<tr><td>Pincode</td>
+<td><input type="text" name="Pincode" id="Pincode" size="30">
+<br><span id="Pincodee"></span>
+</td></tr>
+
+
+<tr><td>Course</td>
+<td><select Name="Course">
+<option Value="-1 selected>select..</option>
+<option Value="Computer Engineering">Computer Engineering</option>
+<option Value="IT Engineering">IT Engineering</option>
+<option Value="Mechanical Engineering">Mechanical Engineering</option>
+<option Value="chemical Engineering">Chemical Engineering</option>
+<option Value="E&tc Engineering">E&tc Engineering/option>
+<option Value="Electrical Engineering">Electrical Engineering</option>
+</SELECT>
+</TD></tr>
+
+<tr><td>Email id</td>
+<td><input type="text" name="Email id" id="Emailid" size="30">
+<br><span id="Emailidd"></span>
+</td></tr>
+
+<tr><td>Password</td>
+<td><input type="password" name="Password" id="Password" size="30">
+<span id="Passwordd"></span>
+</td></tr>
+
+
+<tr><td>Mobile No</td>
+<td><input type="text" name="Mobile No" id="Mobileno"size="30">
+<br><span id="Mobilenoo"></span>
+</td></tr>
+
+
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="Submit" value="Submit">
+</td>
+</tr>
+
+</table>
+</form>
+
+<script type="text/javascript">
+	function validation()
+ 	{
+		var name = document.getElementById('name').value;
+		var Address = document.getElementById('Address').value;
+		
+		var Pincode = document.getElementById('Pincode').value;
+		var Emailid = document.getElementById('Emailid').value;
+		var Password = document.getElementById('Password').value;
+		var Mobileno = document.getElementById('Mobileno').value;
+		
+
+			if(name == "")
+			{
+			document.getElementById('namee').innerHTML="**Please Write the name in the box**";	
+			}
+			
+			if(Address == "")
+			{
+			document.getElementById('Addresss').innerHTML="**Please Write the address in the box**";	
+			}
+
+
+			if(Pincode == "")
+			{
+			document.getElementById('Pincodee').innerHTML="**Please Write the pincode in the box**";	
+			}
+			if(Emailid == "")
+			{
+			document.getElementById('Emailidd').innerHTML="**Please Write the email id in the box**";	
+			}
+			if(Password == "")
+			{
+			document.getElementById('Passwordd').innerHTML="**Please Write the password in the box**";	
+			}
+			
+			if(Mobileno == "")
+			{
+			document.getElementById('Mobilenoo').innerHTML="**Please Write the mobile no in the box**";	
+			}
+				}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
